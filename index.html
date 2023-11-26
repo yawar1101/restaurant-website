@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="container mt-5">
+    <h1>Restaurant App</h1>
+
+    <div class="form-group">
+        <label for="priceInput">Choose Price</label>
+        <input type="number" class="form-control" id="priceInput" placeholder="Enter Price" />
+    </div>
+
+    <div class="form-group">
+        <label for="dishInput">Choose Dish</label>
+        <input type="text" class="form-control" placeholder="Enter Dish Name" id="dishInput" />
+    </div>
+
+    <div class="form-group">
+        <label for="tableSelect">Choose Table</label>
+        <select class="form-control" id="tableSelect">
+            <option value="Table 1">Table 1</option>
+            <option value="Table 2">Table 2</option>
+            <option value="Table 3">Table 3</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-primary" onclick="addToBill()">Add to Bill</button>
+    </div>
+
+    <div>
+        <h2>Waiter's Tab</h2>
+        <ul class="list-group" id="waiterTab"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
